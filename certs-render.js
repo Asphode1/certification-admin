@@ -34,25 +34,29 @@ let courses = [
   }
 ]
 
-courses.forEach(el =>{
+function add(n){
+  for(var i=1;i<=n;i++){
   const course = document.createElement('div')
   course.classList.add('course')
   course.innerHTML =
   `<div class="course__image">
-    <img src="${el.img}" alt="course image preview">
+    <img id="image${i}" src="${courses[i-1].img}" alt="course image preview">
   </div>
   <div class="courseinfo">
-    <h2 class="courseinfo__name">${el.coursename}</h2>
-    <p class="courseinfo__id">ID: ${el.id}</p>
-    <p class="courseinfo__issued">Issued by: ${el.issued}</p>
-    <p class="courseinfo__address">Address: ${el.address}</p>
-    <p class="courseinfo__info">Info: ${el.info}</p>
+    <h2 id="name${i}" class="courseinfo__name">${courses[i-1].coursename}</h2>
+    <p id="id${i}" class="courseinfo__id">ID: ${courses[i-1].id}</p>
+    <p id="issued${i}" class="courseinfo__issued">Issued by: ${courses[i-1].issued}</p>
+    <p id="address${i}" class="courseinfo__address">Address: ${courses[i-1].address}</p>
+    <p id="info${i}" class="courseinfo__info">Info: ${courses[i-1].info}</p>
   </div>
   <div class="course__button">
-    <button class="gotocert">Add Certificate</button>
+    <button class="gotocert">Find</button>
   </div>`
   $("#courses").append(course)
-})
+}}
+//example add(n)
+add(3)
+//
 const certbtn = document.querySelectorAll('.gotocert')
 certbtn.forEach(el =>{
   el.addEventListener('click',function(){
