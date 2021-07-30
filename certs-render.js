@@ -31,6 +31,14 @@ let courses = [
     address: "khawijdsandkac",
     info: "this is another example of a course",
     img: "./image/logo.jpg"
+  },
+  {
+    coursename: "BLOCKCHAIN MATHEMATICS AND COMPUTING",
+    id: "987654321",
+    issued: "leko",
+    address: "0x05aAee206A52Ebf6e49C69f267B491BeB094401D",
+    info: "https://ipfs.io/ipfs/Qmedp8cmzUWZzPuWxbaYG6w7sEu9BCYhXD498U3GtuFR9F",
+    img: "./image/logo.jpg"
   }
 ]
 
@@ -47,15 +55,15 @@ function add(n){
     <p id="id${i}" class="courseinfo__id">ID: ${courses[i-1].id}</p>
     <p id="issued${i}" class="courseinfo__issued">Issued by: ${courses[i-1].issued}</p>
     <p id="address${i}" class="courseinfo__address">Address: ${courses[i-1].address}</p>
-    <p id="info${i}" class="courseinfo__info">Info: ${courses[i-1].info}</p>
+    <p class="courseinfo__info">Info: <a id="info${i}" href="${courses[i-1].info}">${courses[i-1].info}</a></p>
   </div>
   <div class="course__button">
-    <button class="gotocert">Find</button>
+    <button class="gotocert">Add</button>
   </div>`
   $("#courses").append(course)
 }}
 //example add(n)
-add(3)
+add(5)
 //
 const certbtn = document.querySelectorAll('.gotocert')
 certbtn.forEach(el =>{
@@ -67,7 +75,8 @@ certbtn.forEach(el =>{
     $('.courseinfo__add__id').text('Id: ' + courses[i].id) 
     $('.courseinfo__add__issued').text('Issued by: ' + courses[i].issued)
     $('.courseinfo__add__address').text('Address: ' + courses[i].address)
-    $('.courseinfo__add__info').text('Info: ' + courses[i].info)
+    $('.courseinfo__add__info__a').text(courses[i].info)
+    $('.courseinfo__add__info__a').attr('href',courses[i].info)
   })
 })
 document.querySelector('.backtocourse').addEventListener('click',function(){

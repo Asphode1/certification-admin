@@ -64,6 +64,14 @@ header{
   height: 4rem;
   margin: 1rem 1rem;
 }
+.connect__button{
+  margin-left: auto;
+  margin-right: var(--body-margin);
+  padding: 2rem 2rem;
+}
+.connect__button__btn{
+  padding: .5rem 1rem;
+}
 #navbar{
   position: relative;
   background: rgb(31, 34, 48);
@@ -111,7 +119,7 @@ header{
   overflow: hidden;
   width: inherit;
   padding: 2rem;
-  background-color: #f3f3f3;
+  background-color: #d8d8d8;
   min-height: calc(100vh - 16rem);
   transition: .5s;
 }
@@ -153,15 +161,19 @@ header{
   box-shadow: 1px 1px 3px gray;
 }
 .course__image img,.course__add__image img{
-  width: auto;
-  height: 14rem;
+  max-width: 100%;
+  max-height: 14rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
-.courseinfo,.courseinfo__add{
-  min-width: 55%;
+.courseinfo{
+  width: calc(100% - 35rem);
+  padding-left: 4rem;
+}
+.courseinfo__add{
+  width: calc(100% - 20rem);
   padding-left: 4rem;
 }
 .courseinfo p,.courseinfo__add p{
@@ -174,6 +186,7 @@ header{
   font-size: 2.5rem;
 }
 .course__button{
+  margin-left: auto;
   padding: 6rem 1rem 0;
 }
 .gotocert{
@@ -209,6 +222,25 @@ header{
 h1{
   font-size: 2rem;
   margin-bottom: 2rem;
+}
+.courseinfo__add__address,.courseinfo__address{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.courseinfo__info,.courseinfo__add__info{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.courseinfo__info a,.courseinfo__add__info a{
+  font-size: 1em;
+  text-decoration: none;
+  color: #0076e4;
+}
+.courseinfo__info a:hover,.courseinfo__add__info a:hover{
+  text-decoration: underline;
+  text-decoration-color: #0076e4;
 }
 /*fix here   */
 h2{
