@@ -208,6 +208,7 @@ header{
   font-weight: 500;
   color: #0062e4;
   margin-bottom: 1rem;
+  width: fit-content;
 }
 .backtocourse:hover{
   color: #004fb6;
@@ -359,6 +360,23 @@ h2{
 }
 strong{
   font-size: 1em;
+}
+.course__remove{
+  margin-top: 2rem;
+  width: 100%;
+  padding: 2rem;
+  background: #eeeeee;
+}
+.course__remove__bl{
+  width: 95%;
+}
+#course__remove__inp{
+  padding: .5rem 1rem;
+  width: 80%;
+  margin-right: 2rem;
+}
+.Course__remove__btn{
+  padding: .5rem 2rem;
 }
 #footer{
   margin-top: auto;

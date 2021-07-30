@@ -77,6 +77,10 @@ certbtn.forEach(el =>{
     $('.courseinfo__add__address').text('Address: ' + courses[i].address)
     $('.courseinfo__add__info__a').text(courses[i].info)
     $('.courseinfo__add__info__a').attr('href',courses[i].info)
+    setTimeout(function(){
+      const backtv = document.querySelector('.backtocourse')
+      backtv.scrollIntoView();
+    },1500)
   })
 })
 document.querySelector('.backtocourse').addEventListener('click',function(){
