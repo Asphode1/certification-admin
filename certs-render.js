@@ -6,7 +6,7 @@ let courses = [
     issued: "leko",
     address: "abcxyzdefmno",
     info: "this is an example of a course",
-    img: "./image/logo.jpg"
+    img: "./image/newlogotrans.png"
   },
   {
     coursename: "Course example 2",
@@ -14,7 +14,7 @@ let courses = [
     issued: "leko",
     address: "xyzabcdefghi",
     info: "this is another example of a course",
-    img: "./image/logo.jpg"
+    img: "./image/newlogotrans.png"
   },
   {
     coursename: "Course example 3",
@@ -22,7 +22,7 @@ let courses = [
     issued: "leko",
     address: "abcxyzdefmno",
     info: "this is another example of a course",
-    img: "./image/logo.jpg"
+    img: "./image/newlogotrans.png"
   },
   {
     coursename: "Course example 4",
@@ -30,7 +30,7 @@ let courses = [
     issued: "leko",
     address: "khawijdsandkac",
     info: "this is another example of a course",
-    img: "./image/logo.jpg"
+    img: "./image/newlogotrans.png"
   },
   {
     coursename: "BLOCKCHAIN MATHEMATICS AND COMPUTING",
@@ -38,7 +38,7 @@ let courses = [
     issued: "leko",
     address: "0x05aAee206A52Ebf6e49C69f267B491BeB094401D",
     info: "https://ipfs.io/ipfs/Qmedp8cmzUWZzPuWxbaYG6w7sEu9BCYhXD498U3GtuFR9F",
-    img: "./image/logo.jpg"
+    img: "./image/newlogotrans.png"
   }
 ]
 
